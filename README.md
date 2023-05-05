@@ -12,6 +12,8 @@ When A user run it the screen will be cleared and ask for the below entry and ne
 6) Insert A New Row in a Table
 7) Select Data from Table
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+
 1) Create Database user
 • By default, will be a system user called “oracle”
 (To test create a user by useradd oracle)
