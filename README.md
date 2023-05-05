@@ -11,10 +11,11 @@ When A user run it the screen will be cleared and ask for the below entry and ne
 5) Create A new Table inside Database
 6) Insert A New Row in a Table
 7) Select Data from Table
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 
-1) Create Database user
+
+ -->(1)Create Database user:
+ 
 • By default, will be a system user called “oracle”
 (To test create a user by useradd oracle)
 • If the user that run the script is “oracle” or an admin user then he can do the following:
@@ -23,14 +24,16 @@ When A user run it the screen will be cleared and ask for the below entry and ne
 . If not, the entered user will be in a file called DB_admins.db
 . DB_admins.db will have a list of admin users, including oracle and other created users
 
-2) Delete Database User
+--->(2)Delete Database User:
+
 • Only users in DB_admins.db can run this script.
 • The Script will show you the list of users in DB_admins.db
 • If one is selected then it will be deleted from DB_admins.db
 o HINT ) using sed command
-• user “oracle” can’t be deleted.
 
-3) Create new Database
+
+---> (3)Create new Database:
+
 • Only users in DB_admins.db can run this script.
 • The script will ask you for database name
 • Then A Directory is created with the entered DB name under the Following Path:
@@ -38,14 +41,18 @@ MySQL/DataBases/YOUR_NEW_DB
 • A file will be in this path called owner.txt will have the user name for the user that create this database.
 • The final output for this script is A directory with DataBase Name
 For example) MySQL/DataBases/EmplyeeDB
+• user “oracle” can’t be deleted.
 
-4) Delete an existing Database
+---->(4)Delete an existing Database:
+
 • Only users in DB_admins.db can run this script.
 • The script will show all available created Databases inside MySQL/DataBases
 • If the Database owner is the same with the user that run this script, then Database directory and it’s content be deleted.
 • example) if EmplyeeDB is selected directory and it’s content be deleted.
 
-5) Create A new Table inside Database
+
+----->(5)Create A new Table inside Database:
+
 • Only users in DB_admins.db can run this script
 • The script will show all available created Databases inside MySQL/DataBases.
 • If the Database owner is the same with the user that run this script,
@@ -57,7 +64,8 @@ for example, MySQL/DataBases/EmplyeeDB/employee.table:
 emp_id,emp_name,job_name,manager_id,hire_date
 • Each Column name is separated by comma.
 
-6) Insert A New Row in a Table
+----->(6)Insert A New Row in a Table:
+
 • Only users in DB_admins.db can run this script
 • The script will show all available created Databases inside MySQL/DataBases to select your working database.
 • If the selected Database owner is the same with the user that run this script, then will show all available tables inside this database to select from it.
@@ -65,7 +73,8 @@ emp_id,emp_name,job_name,manager_id,hire_date
 • First column must be always unique
 BOUNS(Optional) Read CSV file and read auto insert the matching header inside your table
 
-7) Select Data from Table
+------>(7)Select Data from Table:
+
 • The script will show all available created Databases inside MySQL/DataBases to select your working database
 • then will show all available tables inside this database to select from it.
 • Now you will have two options:
@@ -78,6 +87,7 @@ emp_id,emp_name,job_name,hire_year
 o Search inside table take a string then show you the rows that have this string.
 BOUNS)
 
-8) Delete Row from Table
+------>(8)Delete Row from Table:
+
 • From the selected table each row the contain a specific string must be deleted
 • Then show you the updated table
